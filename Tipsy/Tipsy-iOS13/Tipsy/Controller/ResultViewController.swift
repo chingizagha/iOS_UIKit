@@ -44,7 +44,7 @@ class ResultViewController: UIViewController {
         if(billTotalLabel == nil){
             print("AA")
         }
-        totalAmount = Double(billTotalLabel.text!)!
+        totalAmount = Double(billTotalLabel.text!) ?? 56.0
         let split = Double(splitLabel.text!)!
         
         calculateBrain.calculateBill(amount: totalAmount, tip: tip, split: split)
