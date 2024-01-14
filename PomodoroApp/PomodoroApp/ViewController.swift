@@ -2,33 +2,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    private var startDate = Date()
+       private var timer: Timer?
+    
     
     @IBOutlet weak var labelTimerText: UILabel!
-    var timer = Timer()
     let progressView = CircularProgressView(frame: CGRect(x: 0, y: 0, width: 250, height: 250), lineWidth: 15, rounded: false)
-    
-    let currentDate = Date()
-    let date = Date(timeInterval: self.seconds, since: self.currentDate)
-    
 
-    var seconds = 6000.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-                // Convert timestamp to Date
        
 
-        // Create a date formatter
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "mm:ss" // Customize the date format as per your requirement
-
-        // Format the date and set it to the label
-        let formattedDate = dateFormatter.string(from: date)
-        labelTimerText.text = formattedDate
-        
+        startTimer()
         setUpCircularProgressBarView()
     }
     
@@ -40,19 +26,43 @@ class ViewController: UIViewController {
             view.addSubview(progressView)
     }
     
-    @objc func updateCounter(){
-        seconds -= 1
+  
+    private func startTimer() {
+            // Set up a timer to update the UI every second
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+                guard let self = self else { return }
+                self.updateCounter()
+            }
+
+            // Manually trigger the timer to update the UI immediately
+            timer?.fire()
         }
-    
-    func secondsToHoursMinutesSeconds(_ seconds: Int) -> (Int, Int, Int) {
-        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
-    }
-    
-    
-    @IBAction func btnStart(_ sender: UIButton) {
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-    }
-    
+
+        private func updateCounter() {
+            // Calculate the time difference between the current date and the start date
+            let currentDate = Date()
+            let elapsedTime = currentDate.timeIntervalSince(self.startDate + 60)
+
+            // Format the elapsed time in the desired format
+            let formattedTime = formatTimeInterval(elapsedTime)
+
+            // Update the UI with the formatted time
+            labelTimerText.text = formattedTime
+        }
+
+        private func formatTimeInterval(_ timeInterval: TimeInterval) -> String {
+            let formatter = DateComponentsFormatter()
+            formatter.unitsStyle = .positional
+            formatter.allowedUnits = [.minute, .second]
+            formatter.zeroFormattingBehavior = .pad
+
+            return formatter.string(from: timeInterval) ?? "00:00"
+        }
+
+        deinit {
+            // Invalidate the timer to prevent memory leaks
+            timer?.invalidate()
+        }
 
 }
 
