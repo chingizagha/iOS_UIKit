@@ -1,40 +1,17 @@
-# learningIOS
+# Preview of some Apps
 
+## Preview
 
-<br />
+Projects / Topics                                                                                                                                                            | Screenshots
+---                                                                                                                                                                          |---
+[Project1](Dicee) - *Dice Game*                                      <br/><sub>                            </sub> | ![screen1](git/diceGame.gif) ![screen2](screenshots/project1SS2.png) |
+[Project2](EggTimer) - *Egg Timer*                                        <br/><sub>                                             </sub> | ![screen1](gif/eggTimer.gif) |
+[Project3](Quizzler) - *Quiz App*                  <br/><sub>                                  </sub> | ![screen1](gif/QuizGame.gif) |
+[ProjectPro1](BMI-Calculator) - *BMI *                                 <br/><sub>                                                                         </sub> |  ![screen1](gif/BMI.gif) |
+[Project4](Tipsy) - *Tip App*                                        <br/><sub>                   </sub> | ![screen1](gif/TipApp.gif) |
+[Project5](Clima(WeatherApp)) - *Weather App*                                      <br/><sub>                   </sub> | ![screen1](gif/WeatherApp.gif) |
+[Project6](Project6) - *Auto Layout*                                     <br/><sub> Auto Layout, Constraints, Visual Format Language                        </sub> | ![screen1](screenshots/project6SS1.png) ![screen2](screenshots/project6SS2.png) |
+[ProjectPro2](ProjectPro2) - *Shopping List*                                 <br/><sub>                                                                         </sub> | ![screen1](screenshots/projectPro2SS1.png) |
+[Project7](Project7) - *Whitehouse Petitions*                                        <br/><sub> UITabBarController, JSON, Data, Codable                                 </sub> | ![screen1](screenshots/project7SS1.png) ![screen2](screenshots/project7SS2.png) |
+[Project8](Project8) - *7 Swifty Words*                                        <br/><sub> UI in code, Text alignment, Layout Margins, UIFont                      </sub> | ![screen1](screenshots/project8SS1.png) |
 
-### Dice Game
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/diceGame.gif" width="150" height="300"/>
-
-
-<br />
-
-### Egg Timer
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/eggTimer.gif" width="150" height="300"/>
-
-
-<br />
-
-### Quiz App
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/QuizGame.gif" width="150" height="300"/>
-
-
-<br />
-
-### BMI Calculator
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/BMI.gif" width="150" height="300"/>
-
-
-<br />
-
-### Tip App
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/TipApp.gif" width="150" height="300"/>
-
-
-<br />
-
-### Weather App
-<img src="https://github.com/chingizagha/learningIOS/blob/main/gif/WeatherApp.gif" width="150" height="300"/>
-
-
-<br />
