@@ -6,7 +6,7 @@ Projects / Topics                                                               
 ---                                                                                                                                                                          |---
 [Project1](Dicee) - *Dice Game*                                      <br/><sub>                            </sub> | ![screen1](git/diceGame.gif) ![screen2](screenshots/project1SS2.png) |
 [Project2](EggTimer) - *Egg Timer*                                        <br/><sub>                                             </sub> | ![screen1](gif/eggTimer.gif) |
-[Project3](Quizzler) - *Quiz App*                  <br/><sub>                                  </sub> | ![screen1](gif/QuizGame.gif) |
+[Project3](Quizzler) - *Quiz App*                  <br/><sub>                                  </sub> | ![screen1](gif/QuizGame.gif width="150" height="300") |
 [ProjectPro1](BMI-Calculator) - *BMI *                                 <br/><sub>                                                                         </sub> |  ![screen1](gif/BMI.gif) |
 [Project4](Tipsy) - *Tip App*                                        <br/><sub>                   </sub> | ![screen1](gif/TipApp.gif) |
 [Project5](Clima(WeatherApp)) - *Weather App*                                      <br/><sub>                   </sub> | ![screen1](gif/WeatherApp.gif) |
