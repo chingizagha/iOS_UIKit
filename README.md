@@ -4,7 +4,7 @@
 
 Projects / Topics                                                                                                                                                            | Screenshots
 ---                                                                                                                                                                          |---
-[Project1](Dicee) - *Dice Game*                                      <br/><sub>                            </sub> | ![screen1](git/diceGame.gif) ![screen2](screenshots/project1SS2.png) |
+[Project1](Dicee) - *Dice Game*                                      <br/><sub>                            </sub> | ![screen1](<img src="https://github.com/chingizagha/iOS_UIKit/blob/main/gif/BMI.gif" width="48">)  |
 [Project2](EggTimer) - *Egg Timer*                                        <br/><sub>                                             </sub> | ![screen1](gif/eggTimer.gif) |
 [Project3](Quizzler) - *Quiz App*                  <br/><sub>                                  </sub> | ![screen1](gif/QuizGame.gif width="150" height="300") |
 [ProjectPro1](BMI-Calculator) - *BMI *                                 <br/><sub>                                                                         </sub> |  ![screen1](gif/BMI.gif) |
